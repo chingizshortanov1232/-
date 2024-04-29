@@ -30,3 +30,17 @@ namespace Итоговая_контрольная
             }
         }
     }
+        string[] result = new string[count];
+
+        int index = 0;
+        foreach (string str in input)
+        {
+            if (str.Length <= 3)
+            {
+                result[index] = str;
+                index++;
+            }
+        }
+
+        return result;
+    }
